@@ -1,0 +1,21 @@
+.lato{
+	font-family: 'Lato',sans-serif;
+}
+.jplist-panel .text-filter-box{
+	float: left;
+	height: 30px;
+	margin: 10px 10px 0 0;
+}
+.jplist-panel .text-filter-box .jplist-icon{
+	background: #e8eff9;
+}
+.jplist-panel .text-filter-box .jplist-label{
+	background: #f1f1f1;
+	border-right: 0;
+	margin: 0;
+}
+.jplist-panel .text-filter-box button{
+	border-left: 0;
+	margin: 0;
+	padding: 0 10px;
+}
