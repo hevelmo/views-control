@@ -15,7 +15,6 @@
             c = b ? a.params.defaultView : a.params.currentView;
             c = new jQuery.fn.jplist.ui.controls.ViewsDTO(c);
             console.log(c);
-        	console.log(a);
             return c = new jQuery.fn.jplist.app.dto.StatusDTO(a.name, a.action, a.type, c, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking)
         },
         f = function(a) {
@@ -25,6 +24,7 @@
                 a.params.currentView = b;
                 a.history.addStatus(d(a, !1));
                 a.observer.trigger(a.observer.events.unknownStatusesChanged, [!1])
+                console.log(a);
             })
         },
         e = function(a) {
@@ -34,6 +34,7 @@
                 currentView: a.$control.attr("data-default") || "list-view",
                 types: []
             };
+            console.log(a.params.$buttons);
             0 < a.params.$buttons.length && (a.params.$buttons.each(function() {
                 var b = jQuery(this).attr("data-type");
                 b && a.params.types.push(b)
